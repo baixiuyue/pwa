@@ -1,4 +1,4 @@
-const CACHE_NAME_SPACE = "cache_v9";
+const CACHE_NAME_SPACE = "cache_v1";
 
 var cacheList = [
     '/',

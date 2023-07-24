@@ -58,4 +58,8 @@ window.addEventListener('online', function() {
 
 setInterval(function(){
   console.log('定时拉活')
+  // const orUrl = window.location.origin;
+  // if(orUrl === 'http://localhost:8807') {
+  //   window.location.href = 'http://localhost:8808'
+  // }
 }, 1000 * 5)
