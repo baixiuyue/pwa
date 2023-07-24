@@ -6,7 +6,7 @@ var cacheList = [
     '/main.css',
     '/register_sw.js',
     '/manifest.json',
-    "e.png"
+    "/e.png"
   ]
 
 self.addEventListener('install', async event => {
@@ -28,18 +28,18 @@ self.addEventListener('activate', async event => {
 
 self.addEventListener('fetch', async event => {
     const req = event.request;
-    const url = new URL(req.url);
+    // const url = new URL(req.url);
     // // 判断是否同源请求
     // if(url.origin !== self.origin) {
     //     return 
     // }
     // event.respondWith(networkFirst(req));
     event.respondWith(
-        caches.match(event.request).then(function(response) {
+        caches.match(req).then(function(response) {
           if (response != null) {
             return response
           }
-          return fetch(event.request.url)
+          return fetch(req.url)
         })
       )
 });

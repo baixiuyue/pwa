@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, '/')));
 
 app.use('/app/home', async (req, res, next) => {
   const result = fs.readFileSync(path.join(__dirname, './index.html'),'utf-8')
-  // res.set('content-type', 'text/html');
+  res.set('content-type', 'text/html');
   res.send(result);
   res.end();
 });
