@@ -1,0 +1,36 @@
+.pwa-Install-box {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ffffff;
+    margin-left: 3vw;
+    border-radius: 1rem;
+    height: 6rem;
+    width: 90vw;
+    background-color: #e9e7ef;
+}
+.box img {
+    width: 4rem;
+    height: 4rem;
+}
+.btn-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 1rem;
+    height: 80%;
+}
+.btn-box button {
+    width: 6rem;
+    height: 2rem;
+    margin-right: 1rem;
+    background-color: #44cef6;
+    border: 0;
+    border-radius: 0.5rem;
+}
